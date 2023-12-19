@@ -11,6 +11,30 @@ const styles = StyleSheet.create({
     color: color,
     marginHorizontal: 12,
   }),
+  searchContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: SIZES.medium,
+    backgroundColor: COLORS.secondary,
+    height: 50,
+    borderRadius: SIZES.medium,
+  },
+  searchIcon: {
+    marginHorizontal: 10,
+    color: COLORS.gray,
+  },
+  searchWrapper: {
+    backgroundColor: COLORS.secondary,
+    marginRight: SIZES.small,
+    borderRadius: SIZES.small,
+    flex: 1,
+  },
+  searchInput: {
+    height: "100%",
+    width: "100%",
+    paddingHorizontal: SIZES.small,
+  },
 });
 
 export default styles;

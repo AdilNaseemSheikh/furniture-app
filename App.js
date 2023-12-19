@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import BottomTabNavigation from "./navigation/BottomTabNavigation";
 import { NavigationContainer } from "@react-navigation/native";
+import ProductDetail from "./screens/ProductDetail";
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +33,12 @@ export default function App() {
         <Stack.Screen
           name="Bottom Navigation"
           component={BottomTabNavigation}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name="ProductDetails"
+          component={ProductDetail}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

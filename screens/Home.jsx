@@ -2,8 +2,10 @@ import { SafeAreaView, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import styles from "./home.style";
 import { Ionicons, Fontisto } from "@expo/vector-icons";
-import { ScrollView } from "react-native-gesture-handler";
+import { FlatList, ScrollView } from "react-native-gesture-handler";
 import Welcome from "../components/home/Welcome";
+import { SIZES } from "../constants";
+import ProductRow from "../components/products/ProductRow";
 
 const Home = () => {
   return (
@@ -26,6 +28,7 @@ const Home = () => {
       <ScrollView>
         <Welcome />
       </ScrollView>
+      <ProductRow />
     </SafeAreaView>
   );
 };
